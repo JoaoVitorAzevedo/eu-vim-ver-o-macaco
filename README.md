@@ -1,57 +1,72 @@
-# eu-vim-ver-o-macaco
-# Análise Comparativa das Estratégias de Investimento mais Primatas Existentes
+# 🐒 Eu Vim Ver o Macaco
+### Análise Comparativa das Estratégias de Investimento mais Primatas Existentes
 
+Neste projeto, utilizamos ciência de dados (e um pouco de loucura) para testar se um macaco jogando dardos realmente performa melhor que o investidor médio da Faria Lima. 
 
-Nesse projeto, vamos explorar as principais estratégias de investimento e stock picking para descobrir qual animal é o maior investidor de todos os tempos!
+O objetivo é simular frameworks de "Stock Picking" que variam do puramente aleatório ao "pseudo-lógico" que todo iniciante já tentou uma vez.
 
+---
 
-### Estratégia Macaco
-O *macaco* joga dardos e fica com os 5-10 ativos que acertar primeiro, sem reposição.
+## 📋 Quadro de Atividades (Kanban)
 
-### A Vidente
-https://www.youtube.com/shorts/YotMWb_PCDM?si=kwpeCVHDa0eU_jBw
-É selecionado um único ativo aleatoriamente, mas com probabilidade inversamente proporcional à sua liquidez e número de investidores. Afinal se for escolhido um bancão ou petrolífera ninguém vai acreditar que foi o poder da magia. 
+| Estratégia | Status | Descrição Curta |
+| :--- | :---: | :--- |
+| **🐒 Estratégia Macaco** | ✅ Finalizado | Puro caos e aleatoriedade (Random Walk). |
+| **🔮 A Vidente** | ⏳ Aguardando | Probabilidade inversa à liquidez. |
+| **🤡 O Pseudoholder** | ⏳ Aguardando | "Só é prejuízo se eu vender". |
+| **👴 Warren Bufê** | ⏳ Aguardando | Valor e Renda Fixa (o benchmark racional). |
+| **🚀 Geração Z** | ⏳ Aguardando | FOMO e reserva de emergência no IPO. |
+| **🔫 38tão** | ⏳ Aguardando | 100% Bitcoin, o resto é o Diabo. |
+| **🦈 Barsi, o Tubarão** | ⏳ Aguardando | Dividend Yield acima de tudo. |
+| **💃 Xibom Bombom** | ⏳ Aguardando | "O de cima sobe e o de baixo desce". |
+| **📉 Agregador de Loss** | ⏳ Aguardando | Se caiu 15% hoje, tá "barato". |
+| **♎ Horóscopo Trader** | ⏳ Aguardando | Stock picking baseado no signo do CEO. |
+| **🍺 Dica do Churrasco** | ⏳ Aguardando | O que o seu tio rico falou depois da 3ª Skol. |
 
-### Calma cara, deixa voltar pelo menos no meu preço médio
-O *pseudoholder* seleciona 22 ativos porque leu em algum lugar que esse é o máximo de diversificação que vale a pena. 
-O stock picking é baseado 20% em indicadores fundamentalistas e 80% em indicações de youtuber, trends e quanto a marca é famosa. Não há caixa e se oscilar nem que seja 5% para baixo, até a reserva de emergência irá rodar. O usuário desta técnica NUNCA erra, e portanto morrerá com os ativos iniciais mesmo que vão à R$ 0.00 , pois "no longo prazo tudo se resolve" e "só é prejuízo se eu vender". 
+---
 
-### Warren Bufê
-Alocação balanceada em negócios do mundo real, baseada em extensa análise fundamentalista e nem aí para notícias e *hype*. Se nada estiver barato, haverá caixa. O *velhinho* não tem receio nenhum de deixar bilhões parados durante anos em renda fixa.
+## 🛠️ Detalhamento das Estratégias
 
-### Geração Z
-O jovem que acredita que haverá catástrofes todos os anos só porque viu 6 _circuit breakers_ em 2020. O FOMO grita, e se tudo estiver pela metade do preço amanhã? Esse investidor sempre tem um caixa, e ao mesmo tempo sofre todos os dias observando religiosamente as altas da bolsa. Se explodir com opções para tentar recuperar o que "deixou de ganhar" é sempre uma opção, bem como perder patrimônio todo mês com "seguro de carteira".
+### ✅ 🐒 Estratégia Macaco (The OG)
+O macaco joga dardos em uma lista de ativos do IBOV e fica com os 5-10 que acertar primeiro. Sem viés, sem DRE, sem choro.
 
-### 38tão
-COMPRE TUDO EM BITCOIN. O REAL É A MOEDA DO DIABO. O GOVERNO QUER QUE SEU FILHO SEJA INDEPENDENTE OU DEPENDENTE? É ISSO OU NÃO? VOCÊ PAGARIA PRA SER SODOMIZADO? HEINN!!?!?
-(se você se tornar um milionário que não consegue nem viajar pra fora do país, paciência).
+### 🔮 A Vidente
+Seleciona ativos aleatoriamente, mas com peso maior para empresas com **baixíssima liquidez**. Se escolher uma empresa que ninguém conhece e ela subir, foi "visão". Se for PETR4, foi sorte.
 
-### Barsi o Tubarão
-A estratégia consiste em consultar amigos na gestão da empresa em busca de informação privilegiada... brincadeirinha. 
-Tem um stock picking ai. A empresa pode dar prejuízo, pode maquiar DRE, pode sonegar, pode pedir recuperação judicial, pode poluir o planeta. Só é proibido não distribuir dividendos.
+### 🤡 Calma cara, deixa voltar pelo menos no meu preço médio (O Pseudoholder)
+Seleciona 22 ativos (o número mágico do YouTube). Se um ativo cai 50%, ele não vende porque "o fundamento não mudou" (mesmo sem saber o que é um fundamento). Morre com a ação a R$ 0,00 mas morre com dignidade.
 
-### Xibom Bombom
-Consiste em comprar os 5 ativos que mais subiram no período passado, e entrar vendido nos que estão em queda. Afinal todo brasileiro sabe que "o de cima sobe e o de baixo desce".
+### 🔫 38tão (The Maximalist)
+Ignora o mercado de ações. O framework consiste em ignorar o input `ALL_TICKERS` e comprar 100% em Bitcoin. "Você quer ser dependente ou independente? Hein!?".
 
+### 📉 Agregador de Loss
+Focado em "faca caindo". O algoritmo busca as 5 maiores quedas do último mês e aposta tudo nelas. "Uma hora tem que subir" é o lema oficial.
 
-# 💡 Estratégias Extras para Considerar
-### ETFeiro
-“Não nasci pra isso. Comprei IVVB11, VOO, SMAL11 e tô tranquilo.”
-Buy & Hold só com ETFs (diversificação de verdade, sem stress).
-Pode ser o benchmark “racional” e mostrar que às vezes a simplicidade vence.
+### ♎ Horóscopo Trader
+Cruza a data de fundação da empresa (ou IPO) com o mapa astral do dia. Não investe em empresas de Mercúrio Retrógrado. 
 
-### 🪞 O Espelhado
-Sempre escolhe ativos que “iriam bem se eu tivesse comprado na semana passada”.
-Rebalanceia toda semana, baseado no retrovisor.
-É o investidor atrasado crônico.
+### 🍺 Dica do Churrasco
+Simula um modelo de "ruído". Seleciona ativos que tiveram picos de menções em redes sociais ou fóruns duvidosos nas últimas 48 horas.
 
-### 📱 O Influenciado
-Replica carteiras de youtubers e influencers.
-Baseado em vídeos reais ou carteiras públicas de banco ou corretora(mas exclui ativos que não gosta quase que aleatoriamente porque não entende como a asset/corretora monta uma carteira).
-Vai mostrar o efeito manada na prática.
+---
 
-### 🎲 O Quant da Deep Web
-Faz modelo de regressão com 8 variáveis, mas usa só 1 ano de histórico.
-Pode simular alguma estratégia pseudo-quant, tipo “regressão linear no Excel”.
+## 🚀 Como Executar
 
+1. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Execute o simulador:
+   ```bash
+   python main.py
+   ```
 
+## 📈 Roadmap de Implementação
+- [x] Script base com integração `yfinance`.
+- [x] Métricas básicas (Sharpe, Volatilidade, Retorno).
+- [ ] Implementar motor de backtest para múltiplas estratégias simultâneas.
+- [ ] Adicionar suporte a ativos brasileiros e americanos.
+- [ ] Gerar gráficos comparativos (Macaco vs IBOV vs CDI).
+
+---
+*Disclaimer: Este projeto é puramente educacional e humorístico. Não siga as dicas do seu tio, nem do macaco, nem deste script.*
